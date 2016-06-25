@@ -2,9 +2,6 @@
   "name": "Magazin_blog",
   "description": "Magazin_blog",
   "main": "gulpfile.js",
-  "authors": [
-    ""
-  ],
   "license": "ISC",
   "moduleType": [],
   "homepage": "",
@@ -13,6 +10,7 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "app/bower_components"
   ]
 }
