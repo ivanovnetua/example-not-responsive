@@ -1,7 +1,7 @@
 {
-  "name": "New name",
+  "name": "Magazin_blog",
   "version": "1.0.0",
-  "description": "New description",
+  "description": "Magazin_blog",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
