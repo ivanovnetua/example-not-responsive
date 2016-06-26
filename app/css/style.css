@@ -1,0 +1,71 @@
+@font-face {
+  font-family: Minion Pro;
+  src: url(../fonts/MinionPro-Regular.otf); }
+
+body {
+  background: url(../img/background.png) repeat-y;
+  background-size: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #6e6e6e;
+  font-size: 12px;
+  font-weight: 400; }
+  body * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.container {
+  width: 950px;
+  margin: 0 auto; }
+
+.header {
+  height: 132px; }
+
+.top-line {
+  height: 90px;
+  padding-top: 38px; }
+  .top-line .logo {
+    display: inline-block;
+    font-size: 0;
+    float: left; }
+  .top-line .message {
+    display: inline-block;
+    font-size: 0;
+    margin-left: 46px;
+    float: left; }
+  .top-line .search {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    float: right; }
+    .top-line .search i {
+      position: absolute;
+      left: 6px;
+      top: 4px;
+      width: 16px;
+      height: 13px;
+      background: url(../img/search-icon.png) center no-repeat;
+      padding: 10px 14px; }
+    .top-line .search input {
+      font-size: 12px;
+      color: #7d7d7d;
+      width: 252px;
+      height: 26px;
+      padding-left: 37px;
+      background-color: #ededed;
+      -webkit-border-radius: 15px;
+      border-radius: 15px;
+      border: 0px;
+      -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75), inset 1px 2px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75), inset 1px 2px 3px rgba(0, 0, 0, 0.2); }
+  .top-line h1 {
+    font-family: "Minion Pro";
+    font-size: 30px;
+    color: #7d7d7d;
+    text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.75);
+    margin: 0; }
+  .top-line h2 {
+    font-family: "Minion Pro";
+    font-size: 12px;
+    line-height: 46px;
+    color: #666;
+    margin: 0; }
