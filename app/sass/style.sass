@@ -2,7 +2,7 @@
 	font-family: Minion Pro
 	src: url(../fonts/MinionPro-Regular.otf)
 
-
+//Main styles
 body
 	background: url(../img/background.png) repeat-y
 	background-size: 100%
@@ -17,30 +17,39 @@ body
 	width: 950px
 	margin: 0 auto
 
+.clearfix:after
+	content: ""
+	display: table
+	clear: both
+
+// Header
+
 .header
 	height: 132px
 
 .top-line
-	height: 90px
-	padding-top: 38px
+	height: 86px
+	padding-top: 27px
 	.logo
 		display: inline-block
 		font-size: 0
+		padding-left: 40px
 		float: left
 	.message
 		display: inline-block
 		font-size: 0
-		margin-left: 46px
+		margin-left: 45px
 		float: left
 	.search
 		position: relative
+		float: right
 		display: inline-block
 		font-size: 0
-		float: right
+		margin-top: 7px
 		i
 			position: absolute
 			left: 6px
-			top: 4px
+			top: 6px
 			width: 16px
 			height: 13px
 			background: url(../img/search-icon.png) center no-repeat
@@ -48,8 +57,8 @@ body
 		input
 			font-size: 12px
 			color: #7d7d7d
-			width: 252px
-			height: 26px
+			width: 254px
+			height: 30px
 			padding-left: 37px 
 			background-color: #ededed
 			border-radius: 15px
@@ -58,14 +67,171 @@ body
 	h1
 		font-family: "Minion Pro"
 		font-size: 30px
+		letter-spacing: -2px
 		color: #7d7d7d
 		text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.75)
+		padding: 0
 		margin: 0
+		a, a:active, a:visited
+			text-decoration: none
+			color: #7d7d7d
 	h2
 		font-family: "Minion Pro"
 		font-size: 12px
 		line-height: 46px
 		color: #666
+		padding: 0
 		margin: 0
+		letter-spacing: 0px
 
+// Navigation menu
+
+.nav
+	ul
+		list-style: none
+		padding: 0
+		margin: 0
+	li
+		display: inline-block
+		min-width: 57px
+		height: 34px
+		margin: 0 17px 0 5px
+		padding: 0 2px
+		font-size: 0
+		text-align: center
+		&:first-of-type
+			margin-left: 15px
+			margin-right: 0
+		&:last-of-type
+			margin-right: 0
+		&.active
+			position: relative
+			background-color: #fff
+			border-radius: 20px
+			a, a:active, a:visited
+				color: #de004e
+			&:after
+				content: ''
+				position: absolute
+				background: url(../img/active-nav.png)
+				width: 15px
+				height: 5px
+				top: 34px
+				right: 34px
+		a
+			font-size: 12px
+			line-height: 34px
+			font-style: italic
+			color: #646363
+			text-decoration: none
+			&:active, &:visited
+				color: #646363
+
+// Page container
+
+.page
+	border: 1px solid #d5d5d5
+	border-radius: 15px
+	padding: 29px 34px
+
+// Slider
+
+.slider-column
+	position: relative
+	float: left
+	width: 521px
+	img
+		width: 521px
+		height: 284px
+		border-radius: 10px
+
+.slider-description
+	position: absolute
+	top: 213px
+	left: 17px
+	color: #fff
+	h2
+		margin: 10px 0px 0px 5px
+		padding: 0
+		letter-spacing: 0px
+
+.news-category
+	i
+		display: inline-block
+		color: #fff
+		background-color: #de004e
+		padding: 4px 5px
+		border-radius: 10px
+		font-size: 11px
+		font-style: normal
+		margin: 0
+	.posting-date
+		position: relative
+		display: inline-block
+		margin-left: 25px
+		font-size: 11px
+		&:before
+			content: '--'
+			position: absolute
+			left: -22px
+
+// News column
+
+.news-column
+	position: relative
+	width: 359px
+	float: right
+	padding-left: 29px
+	.image-border
+		float: left
+		img
+			border-radius: 5px
+
+
+	.fresh-content
+		width: 285px
+		min-height: 47px
+		float: right
+		padding-bottom: 17px
+
+	h3
+		font-size: 12px
+		margin: 0
+		padding: 5px 0 0 24px
+		letter-spacing: -0.7px
+
+.date
+	font-size: 10px
+	margin: 0
+	padding: 0 0 0 24px
+	letter-spacing: -0.7px
+
+.news
+	position: relative
+	overflow: hidden
+	margin-top: 12px
+	&:after
+		content: ''
+		position: absolute
+		top: 50px
+		left: 70px
+		height: 1px
+		width: 275px
+		border-bottom: 1px dashed #D8D8D8
+
+h2
+	font-size: 18px
+	margin: 0 0 19px 38px
+	padding: 0
+	letter-spacing: -1pt
+
+
+.f-news:before
+	content: ''
+	width: 32px
+	height: 27px
+	position: absolute
+	background: url(../img/news-icon.png) no-repeat center
+	top: 0
+	left: 23px
 
