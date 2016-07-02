@@ -281,3 +281,12 @@ a.read-more {
   font-size: 10px;
   font-style: italic;
   line-height: 18px; }
+
+.left-info {
+  float: left;
+  width: 283px;
+  border-right: 1px solid #EBEBEB; }
+
+.right-info {
+  float: right;
+  width: 579px; }
