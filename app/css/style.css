@@ -130,7 +130,8 @@ body {
   border: 1px solid #d5d5d5;
   -webkit-border-radius: 15px;
   border-radius: 15px;
-  padding: 29px 34px; }
+  padding: 29px 34px;
+  background-color: #fff; }
 
 .slider-column {
   position: relative;
@@ -152,26 +153,33 @@ body {
     padding: 0;
     letter-spacing: 0px; }
 
-.news-category i {
-  display: inline-block;
-  color: #fff;
-  background-color: #de004e;
-  padding: 4px 5px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  font-size: 11px;
-  font-style: normal;
-  margin: 0; }
+.news-category {
+  display: inline-block; }
+  .news-category i {
+    display: inline-block;
+    color: #fff;
+    background-color: #de004e;
+    padding: 4px 6px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-style: normal;
+    margin: 0; }
 
-.news-category .posting-date {
+.posting-date {
   position: relative;
   display: inline-block;
   margin-left: 25px;
   font-size: 11px; }
-  .news-category .posting-date:before {
+  .posting-date:before {
     content: '--';
     position: absolute;
     left: -22px; }
+
+.news-section {
+  width: 880px;
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 20px; }
 
 .news-column {
   position: relative;
@@ -227,3 +235,49 @@ h2 {
   background: url(../img/news-icon.png) no-repeat center;
   top: 0;
   left: 23px; }
+
+.head-lines {
+  border-bottom: 1px solid #EBEBEB; }
+
+.left-column {
+  width: 283px;
+  min-height: 331px;
+  float: left;
+  border-right: 1px solid #EBEBEB;
+  padding-top: 20px; }
+
+.middle-column {
+  width: 315px;
+  min-height: 331px;
+  padding-left: 32px;
+  float: left;
+  padding-top: 20px; }
+  .middle-column .news-preview {
+    padding-right: 11px; }
+
+.right-column {
+  width: 280px;
+  min-height: 331px;
+  float: right;
+  padding: 20px 0 0 19px; }
+  .right-column .news-preview {
+    padding-right: 0px; }
+  .right-column p {
+    word-spacing: -2px; }
+
+.news-preview {
+  padding-right: 27px;
+  text-align: justify; }
+  .news-preview h2 {
+    margin: 3px 0 2px 0;
+    letter-spacing: 0px;
+    text-align: left; }
+  .news-preview p {
+    margin: 0;
+    line-height: 18px; }
+
+a.read-more {
+  color: #de004e;
+  font-size: 10px;
+  font-style: italic;
+  line-height: 18px; }
