@@ -1,3 +1,5 @@
+$red: #de004e
+
 @font-face
 	font-family: Minion Pro
 	src: url(../fonts/MinionPro-Regular.otf)
@@ -290,16 +292,198 @@ h2
 		line-height: 18px
 
 a.read-more
-	color: #de004e
+	color: $red
 	font-size: 10px
 	font-style: italic
 	line-height: 18px
 
-.left-info 
+//Information section
+
+.head-title
+	color: #7a7a7a
+	font-size: 18px
+	padding: 20px 0 21px 44px
+
+//Left
+
+.left-info
+	position: relative
 	float: left
 	width: 283px
 	border-right: 1px solid #EBEBEB
+	.head-title
+		&:before
+			content: ''
+			width: 32px
+			height: 29px
+			position: absolute
+			background: url(../img/comment_icon.png) no-repeat center
+			top: 21px
+			left: 0
+	.date
+		color: $red
+		font-size: 10px
+		line-height: 14px
+		padding: 0 0 0 16px
+	.avatar
+		display: inline-block
+
+.comments-column
+	border-bottom: 1px solid #EBEBEB
+	padding-bottom: 18px
+
+.comment-description
+	width: 230px
+	vertical-align: top
+	display: inline-block
+	p
+		margin: 0 0 10px 15px
+
+.avtor-name
+	color: #000
+
+.archives
+	position: relative
+	font-size: 0
+	.head-title
+		padding-bottom: 7px
+		&:before
+			content: ''
+			width: 32px
+			height: 29px
+			position: absolute
+			background: url(../img/archives-icon.png) no-repeat center
+			top: 16px
+			left: 0
+	p
+		line-height: 18px
+		font-size: 12px
+		a, a:hover, a:visited, a:active
+			color: #6e6e6e
+	a
+		text-decoration: none
+		&.read-more
+			font-size: 11px
+
+.archive-left-column
+	display: inline-block
+	width: 142px
+
+.archive-right-column
+	display: inline-block
+	width: 120px
+
+
+// Right
 
 .right-info
+	position: relative
+	padding: 5px 0 0 17px
 	float: right
 	width: 579px
+	.head-title
+		padding-top: 14px
+		&:before
+			content: ''
+			width: 32px
+			height: 27px
+			position: absolute
+			background: url(../img/last-news-icon.png) no-repeat center
+			top: 19px
+			left: 16px
+
+// Foto
+
+.last-foto
+	font-size: 0px
+	.foto-section
+		padding: 3px 0 0 0
+		margin-bottom: 20px
+		&:last-child
+			margin-bottom: 0
+	.img-wrapper
+		display: inline-block
+		margin-left: 23px
+		background-color: #e3e3e3
+		border-radius: 4px
+		padding: 6px
+		&:first-child
+			margin-left: 0px
+
+//Video
+
+.last-video
+	position: relative
+	.head-title
+		padding: 16px 0 15px 33px
+		&:before
+			content: ''
+			width: 29px
+			height: 26px
+			position: absolute
+			background: url(../img/video-icon.png) no-repeat center
+			top: 19px
+			left: 0px
+	.video-section
+		padding: 3px 0 0 0
+		margin-bottom: 20px
+		font-size: 0px
+		&:last-child
+			margin-bottom: 0
+	.video-wrapper
+		min-height: 114px
+		min-width: 171px
+		display: inline-block
+		margin-left: 23px
+		background-color: #e3e3e3
+		border-radius: 4px
+		padding: 6px
+		&:first-child
+			margin-left: 0px
+
+//Footer
+.footer
+	font-size: 0
+	.copywright
+		float: left
+		padding: 21px 0 0 12px
+	p
+		margin: 0
+		line-height: 10px
+		font-size: 11px
+	a
+		font-size: 11px
+		text-decoration: none
+		font-style: normal
+	.social
+		float: right
+		position: relative
+		min-width: 300px
+		height: 30px
+		padding: 21px 0 0 12px
+		.rss
+			&:before
+			content: ''
+			width: 32px
+			height: 26px
+			position: absolute
+			background: url(../img/rss_icon.png) no-repeat center
+			top: 21px
+			right: 36px
+		.twitter
+			&:before
+				content: ''
+				width: 32px
+				height: 26px
+				position: absolute
+				background: url(../img/twitter_icon.png) no-repeat center
+				top: 21px
+				right: 6px
+
+
+
+
+
+
+
+

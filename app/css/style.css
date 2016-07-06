@@ -282,11 +282,172 @@ a.read-more {
   font-style: italic;
   line-height: 18px; }
 
+.head-title {
+  color: #7a7a7a;
+  font-size: 18px;
+  padding: 20px 0 21px 44px; }
+
 .left-info {
+  position: relative;
   float: left;
   width: 283px;
   border-right: 1px solid #EBEBEB; }
+  .left-info .head-title:before {
+    content: '';
+    width: 32px;
+    height: 29px;
+    position: absolute;
+    background: url(../img/comment_icon.png) no-repeat center;
+    top: 21px;
+    left: 0; }
+  .left-info .date {
+    color: #de004e;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 0 0 0 16px; }
+  .left-info .avatar {
+    display: inline-block; }
+
+.comments-column {
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 18px; }
+
+.comment-description {
+  width: 230px;
+  vertical-align: top;
+  display: inline-block; }
+  .comment-description p {
+    margin: 0 0 10px 15px; }
+
+.avtor-name {
+  color: #000; }
+
+.archives {
+  position: relative;
+  font-size: 0; }
+  .archives .head-title {
+    padding-bottom: 7px; }
+    .archives .head-title:before {
+      content: '';
+      width: 32px;
+      height: 29px;
+      position: absolute;
+      background: url(../img/archives-icon.png) no-repeat center;
+      top: 16px;
+      left: 0; }
+  .archives p {
+    line-height: 18px;
+    font-size: 12px; }
+    .archives p a, .archives p a:hover, .archives p a:visited, .archives p a:active {
+      color: #6e6e6e; }
+  .archives a {
+    text-decoration: none; }
+    .archives a.read-more {
+      font-size: 11px; }
+
+.archive-left-column {
+  display: inline-block;
+  width: 142px; }
+
+.archive-right-column {
+  display: inline-block;
+  width: 120px; }
 
 .right-info {
+  position: relative;
+  padding: 5px 0 0 17px;
   float: right;
   width: 579px; }
+  .right-info .head-title {
+    padding-top: 14px; }
+    .right-info .head-title:before {
+      content: '';
+      width: 32px;
+      height: 27px;
+      position: absolute;
+      background: url(../img/last-news-icon.png) no-repeat center;
+      top: 19px;
+      left: 16px; }
+
+.last-foto {
+  font-size: 0px; }
+  .last-foto .foto-section {
+    padding: 3px 0 0 0;
+    margin-bottom: 20px; }
+    .last-foto .foto-section:last-child {
+      margin-bottom: 0; }
+  .last-foto .img-wrapper {
+    display: inline-block;
+    margin-left: 23px;
+    background-color: #e3e3e3;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 6px; }
+    .last-foto .img-wrapper:first-child {
+      margin-left: 0px; }
+
+.last-video {
+  position: relative; }
+  .last-video .head-title {
+    padding: 16px 0 15px 33px; }
+    .last-video .head-title:before {
+      content: '';
+      width: 29px;
+      height: 26px;
+      position: absolute;
+      background: url(../img/video-icon.png) no-repeat center;
+      top: 19px;
+      left: 0px; }
+  .last-video .video-section {
+    padding: 3px 0 0 0;
+    margin-bottom: 20px;
+    font-size: 0px; }
+    .last-video .video-section:last-child {
+      margin-bottom: 0; }
+  .last-video .video-wrapper {
+    min-height: 114px;
+    min-width: 171px;
+    display: inline-block;
+    margin-left: 23px;
+    background-color: #e3e3e3;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 6px; }
+    .last-video .video-wrapper:first-child {
+      margin-left: 0px; }
+
+.footer {
+  font-size: 0; }
+  .footer .copywright {
+    float: left;
+    padding: 21px 0 0 12px; }
+  .footer p {
+    margin: 0;
+    line-height: 10px;
+    font-size: 11px; }
+  .footer a {
+    font-size: 11px;
+    text-decoration: none;
+    font-style: normal; }
+  .footer .social {
+    float: right;
+    position: relative;
+    min-width: 300px;
+    height: 30px;
+    padding: 21px 0 0 12px; }
+    .footer .social .rss {
+      content: '';
+      width: 32px;
+      height: 26px;
+      position: absolute;
+      background: url(../img/rss_icon.png) no-repeat center;
+      top: 21px;
+      right: 36px; }
+    .footer .social .twitter:before {
+      content: '';
+      width: 32px;
+      height: 26px;
+      position: absolute;
+      background: url(../img/twitter_icon.png) no-repeat center;
+      top: 21px;
+      right: 6px; }
